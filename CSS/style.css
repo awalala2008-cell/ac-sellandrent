@@ -1,0 +1,313 @@
+
+/* === style de base ===*/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* === conteneur central ===*/
+.container {
+    max-width:  1100px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+
+/* === en-tete + menue ===*/
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.brand img {
+    height: 40px;
+    width: auto;
+    border-radius: 8px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.menu a:hover {
+    background: #eee;
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    background: #d9b8a3;
+    font-size: 14px;
+}
+
+.menu a.cta {
+    background: #d9b8a3;
+    color: #222;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    background: #d9b8a3;
+    font-size: 14px;
+}
+
+/* === sections generalaes ===*/
+.section {
+    padding: 32px 0;
+}
+
+h1, h2, h3{
+    margin: 0 0 10px;
+}
+
+h1{
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+.sub {
+    color: #777;
+    margin-bottom: 16px;
+}
+
+/* === Accueil (hero) ===*/
+.hero-mock-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-mock-title {
+    font-size: 28px;
+    margin: 16px 0 8px;
+}
+
+.hero-mock-sub {
+    color: #777;
+    margin-bottom: 16px;
+
+}
+
+.hero-mock-ctas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    background: #fff;
+    font-size: 14px;
+}
+
+.btn.primary {
+    background: #d9b8a3;
+    border-color: #d9b8a3;
+    font-weight: bold;
+}
+
+.btn.outline{
+    background: #fff;
+}
+
+/* === image d'accueil ===*/
+.hero-mock-figure {
+    margin: 0 auto 18px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.hero-mock-figure img {
+    display : block;
+    width: 100%;
+    height: auto;
+}
+
+/* === barre de recherche ===*/
+.hero-mock-search {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    border-radius: 999px;
+    border: 1px solid #ddd;
+    padding: 6px 10px;
+}
+
+.hero-mock-search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.hero-mock-search button {
+    border: none;
+    padding: 8px 12px;
+    border-radius :999px;
+    background: #eee;
+    cursor: pointer;
+}
+
+/* === atouts (3blocs) ===*/
+.hero-mock-feats .feat {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.hero-mock-feats .feat {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.hero-mock-feats .icon {
+  font-size: 20px;
+}
+
+.br-md {
+  display: none;
+}
+
+/* ==== Grille de cartes (voitures / appart) ==== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 14px;
+}
+
+/* ==== Formulaires ==== */
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ==== Pied de page ==== */
+.footer {
+  margin-top: 32px;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  background: #ffffff;
+  font-size: 12px;
+  color: #777;
+}
+
+.footer .grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.footer a {
+  color: #555;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 800px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 8px 0;
+    gap: 8px;
+  }
+
+  .hero-mock-feats {
+    grid-template-columns: 1fr;
+  }
+
+  .br-md {
+    display: inline;
+  }
+}

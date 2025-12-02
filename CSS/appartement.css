@@ -1,0 +1,140 @@
+
+
+/* ========================
+   STYLE PAGE APPARTEMENTS
+   ======================== */
+
+.appart-section {
+  padding: 32px 0;
+}
+
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nav {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.brand img {
+    height: 40px;
+    width: auto;
+    border-radius: 8px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu a:hover {
+    background: #eee;
+}
+
+.menu a.cta {
+    background: #d9b8a3;
+    color: #222;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    background: #d9b8a3;
+    font-size: 14px;
+}
+
+
+/* Grille */
+.appartement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 10px;
+}
+
+/* Cartes (identiques aux voitures) */
+.appartement-grid .card {
+  background: #fdf6ef;              /* beige clair */
+  border-radius: 26px;              /* arrondi large */
+  border: 1px solid #e6d7c8;
+  padding: 16px;
+  box-shadow: 0 18px 40px rgba(122, 96, 76, 0.18);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.appartement-grid .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 50px rgba(122, 96, 76, 0.25);
+}
+
+/* Images */
+.appartement-grid .card img {
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #e3d7cc;
+  margin-bottom: 12px;
+}
+
+/* Titres */
+.appartement-grid .card h3 {
+  font-size: 16px;
+  margin: 4px 0 6px;
+}
+
+/* Description */
+.appartement-grid .card p {
+  font-size: 14px;
+  color: #65584c;
+  margin-bottom: 14px;
+}
+
+/* Bouton */
+.appartement-grid .card .btn.primary {
+  background: #d9b8a3;
+  border-radius: 999px;
+  padding: 10px 18px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.appartement-grid .card .btn.primary:hover {
+  background: #caa892;
+}
+
+.footer {
+  margin-top: 32px;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  background: #ffffff;
+  font-size: 12px;
+  color: #777;
+}
+
+.footer .grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.footer a {
+  color: #555;
+}

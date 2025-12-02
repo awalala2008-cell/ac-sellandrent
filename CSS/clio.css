@@ -1,0 +1,198 @@
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.brand img {
+    height: 40px;
+    width: auto;
+    border-radius: 8px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu a:hover {
+    background: #eee;
+}
+
+.menu a.cta {
+    background: #d9b8a3;
+    color: #222;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    background: #d9b8a3;
+    font-size: 14px;
+}
+/* ==========================
+   FICHE CLIO COURBEVOIE
+   ========================== */
+
+/* Carte principale */
+.fiche-voiture {
+  max-width: 900px;
+  margin: 32px auto;
+  background: #fdf6ef;                 /* beige clair */
+  border-radius: 26px;
+  border: 1px solid #e6d7c8;
+  padding: 20px 24px;
+  box-shadow: 0 18px 40px rgba(122, 96, 76, 0.18);
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* Colonne gauche : image */
+.fiche-voiture-visuel {
+  flex: 1.1;
+}
+
+.fiche-voiture-visuel img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  border: 1px solid #e3d7cc;
+}
+
+/* Colonne droite : texte */
+.fiche-voiture-infos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Titre + badge */
+.fiche-voiture-titre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.fiche-voiture-titre h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.badge-etat {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #d9b8a3;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Lieu / prix */
+.fiche-voiture-meta {
+  font-size: 14px;
+  color: #65584c;
+}
+
+/* Liste des caractéristiques */
+.fiche-voiture-details {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 6px;
+  font-size: 14px;
+  color: #444;
+}
+
+.fiche-voiture-details li::before {
+  content: "• ";
+  color: #d9b8a3;
+}
+
+/* Boutons en bas */
+.fiche-voiture-actions {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.fiche-voiture-actions .btn.primary {
+  background: #d9b8a3;
+  border-radius: 999px;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fiche-voiture-actions .btn.primary:hover {
+  background: #caa892;
+}
+
+/* Bouton retour plus discret */
+.fiche-voiture-actions .Btn {
+  display: inline-block;
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: 1px solid #d9b8a3;
+  text-decoration: none;
+  color: #333;
+  background: transparent;
+  font-size: 14px;
+}
+.Btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    background: #d9b8a3;
+    font-size: 14px;
+}
+
+/* Responsive mobile */
+@media (max-width: 800px) {
+  .fiche-voiture {
+    flex-direction: column;
+  }
+}
+
+.footer {
+  margin-top: 32px;
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  background: #ffffff;
+  font-size: 12px;
+  color: #777;
+}
+
+.footer .grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.footer a {
+  color: #555;
+}
